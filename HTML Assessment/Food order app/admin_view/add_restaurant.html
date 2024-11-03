@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Restaurant</title>
+    <style>
+        .description {
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+        form{
+            margin-left: 3%;
+            line-height: 1.8;
+            border: 1px solid black;
+            border-radius: 7%;
+            width: 50%;
+            padding-bottom: 4%;
+            padding-inline-start: 2%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Add Restaurant</h1>
+    <hr/>
+    <form action method="post">
+        <h3>New Restaurant</h3>
+        <label for="Restaurant">Restaurant Name:</label>
+        <input type="text" id="Restaurant" name="Restaurant" required />
+        <br>
+        <div class="description">
+            <label for="RestaurantDescription">Restaurant Description:</label>
+            <br>
+            <textarea rows="5" name="Restaurant description" id="RestaurantDescription"></textarea>
+        </div>
+        <label for="Contact">Contact No: </label>
+        <input type="tel" id="Contact" name="Contact" required />
+        <br>
+        <label for="imgURL">Restaurant URL: </label>
+        <input type="url" id="imgURL" name="imgURL" required />
+        <br>
+        
+        <div class="description">
+            <button type="reset">Discard</button>
+            <button type="submit">Save</button>
+        </div>
+    </form>
+    <br><br>
+    <a href="admin_page.html">Back to Admin</a><br />
+</body>
+
+</html>

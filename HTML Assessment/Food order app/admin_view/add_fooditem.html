@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add FoodItem</title>
+    <style>
+        .description {
+            padding-top: 1%;
+            padding-bottom: 1%;
+        }
+
+        form {
+            margin-left: 3%;
+            line-height: 1.8;
+            border: 1px solid black;
+            border-radius: 7%;
+            width: 60%;
+            padding-bottom: 4%;
+            padding-inline-start: 2%;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Add FoodItem</h1>
+    <hr />
+    <form action method="post">
+        <h3>FoodItem Information</h3>
+        <label for="FoodItem">FoodItem Name:</label>
+        <input type="text" id="FoodItem" name="FoodItem" required />
+        <br>
+        <div class="description">
+            <label for="FoodItemDescription">FoodItem Description:</label>
+            <br>
+            <textarea rows="5" name="FoodItem description" id="FoodItemDescription"></textarea>
+        </div>
+        <label for="available">Available?: </label>
+        <input type="checkbox" id="available" name="available" required />
+        <br>
+        <label for="vegetarian">Vegetarian?: </label>
+        <input type="checkbox" id="vegetarian" name="vegetarian" required />
+        <br>
+        <label for="Category">Category: </label>
+        <select id="Category" name="Category" required>
+            <option>Pasta</option>
+            <option>Salad</option>
+            <option>Soup</option>
+            <option>Casserole</option>
+            <option>Dinner</option>
+            <option>Chicken</option>
+            <option>Sandwiches</option>
+        </select>
+        <br>
+        <label for="Cuisine">Cuisine: </label>
+        <select id="Cuisine" name="Cuisine" required>
+            <option>Italian</option>
+            <option>Chinese</option>
+            <option>Greek-American</option>
+            <option>Mexican</option>
+            <option>Japanese</option>
+            <option>French</option>
+            <option>Thai</option>
+            <option>American</option>
+            <option>Anglo-Indian</option>
+            <option>Arab</option>
+            <option>Argentine</option>
+        </select>
+        <br>
+        <label for="imgURL">Image URL: </label>
+        <input type="url" id="imgURL" name="imgURL" required />
+        <br>
+        <label for="active">Is Active: </label>
+        <input type="checkbox" id="active" name="active" required />
+        <br>
+        <div class="description">
+            <br>
+            <button type="reset">Discard</button>
+            <button type="submit">Save</button>
+        </div>
+    </form>
+    <br><br>
+    <a href="admin_page.html">Back to Admin</a><br />
+</body>
+
+</html>
